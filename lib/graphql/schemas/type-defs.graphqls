@@ -1,0 +1,20 @@
+scalar Date
+
+type Reservation {
+  _id: String
+  name: String
+  phone: String
+  title: String!
+  start: Date!
+  end: Date!
+  date: Date!
+}
+
+type Query {
+  currentReservation: [Reservation!]
+}
+
+type Mutation {
+  updateReservation(id: String!, phone: String!, name: String!): Reservation!
+  addAvailableWeekReservation: [Reservation!]
+}

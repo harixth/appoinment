@@ -1,0 +1,7 @@
+mutation UpdateReservation($id: String!, $phone: String!, $name: String!) {
+  updateReservation(id: $id, phone: $phone, name: $name) {
+    name
+    phone
+    title
+  }
+}

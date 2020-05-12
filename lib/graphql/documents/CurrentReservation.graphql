@@ -1,0 +1,11 @@
+query CurrentReservation {
+  currentReservation {
+    _id
+    name
+    phone
+    title
+    start
+    end
+    date
+  }
+}
